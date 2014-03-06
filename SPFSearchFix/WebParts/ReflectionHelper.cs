@@ -6,6 +6,7 @@ namespace SPFSearchFix
 {
     public static class MethodInfoExtensions
     {
+        /// http://stackoverflow.com/questions/1565734/is-it-possible-to-set-private-property-via-reflection
         /// <summary>
         /// Returns a _private_ Property Value from a given Object. Uses Reflection.
         /// Throws a ArgumentOutOfRangeException if the Property is not found.
@@ -83,6 +84,13 @@ namespace SPFSearchFix
             fi.SetValue(obj, val);
         }
 
+        /// <summary>
+        /// http://www.simplygoodcode.com/2012/08/invoke-base-method-using-reflection/
+        /// </summary>
+        /// <param name="MethodInfo"></param>
+        /// <param name="Object"></param>
+        /// <param name="Arguments"></param>
+        /// <returns></returns>
         public static object InvokeNotOverride(this MethodInfo MethodInfo, object Object, params object[] Arguments)
         { // void return, this parameter
             var Parameters = MethodInfo.GetParameters();
