@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="38143edb-90f5-425b-bdfe-d01d12ef7c40" solutionId="38143edb-90f5-425b-bdfe-d01d12ef7c40" resetWebServer="false" sharePointProductVersion="15.0" name="SPFSearchFix" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="7d6cdf09-4f7e-4f47-9512-9b6fbea342ad" />
+  </features>
+</package>

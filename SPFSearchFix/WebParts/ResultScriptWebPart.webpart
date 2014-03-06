@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="SPFSearchFix.ResultScriptWebPart, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">ResultScriptWebPart</property>
+        <property name="Description" type="string"></property>
+        <property name="ChromeType">None</property>
+        <property name="AllowMinimize" type="bool">true</property>
+        <property name="AllowClose" type="bool">true</property>
+        <property name="Hidden" type="bool">false</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

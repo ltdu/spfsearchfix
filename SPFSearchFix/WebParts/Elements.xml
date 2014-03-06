@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+
+  <Module Name="WebParts" List="113" Url="_catalogs/wp">
+    <File Path="WebParts\ResultScriptWebPart.webpart" Url="SPFSearchFix.ResultScriptWebPart.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="Search (FIXED)" />
+    </File>
+    <File Path="WebParts\SearchBoxScriptWebPart.webpart" Url="SPFSearchFix.SearchBoxScriptWebPart.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="Search (FIXED)" />
+    </File>
+    <File Path="WebParts\RefinementScript.webpart" Url="SPFSearchFix.RefinementScript.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="Search (FIXED)" />
+    </File>
+  </Module>
+
+  <Control Id="SmallSearchInputBox"
+           Sequence="20"
+           ControlClass="SPFSearchFix.SearchBoxScriptWebPart"
+           ControlAssembly="$SharePoint.Project.AssemblyFullName$">
+    <Property Name="UseSharedSettings">true</Property>
+    <Property Name="RenderTemplateId">~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchBox_Compact.js</Property>
+    <Property Name="EmitStyleReference">false</Property>
+    <Property Name="ServerInitialRender">true</Property>
+    <Property Name="TryInplaceQuery">false</Property>
+    <Property Name="QueryGroupNamesJson">[&quot;MasterPage&quot;]</Property>
+    <Property Name="ChromeType">None</Property>
+    <Property Name="ID">SmallSearchInputBox1</Property>
+  </Control>
+
+</Elements>
